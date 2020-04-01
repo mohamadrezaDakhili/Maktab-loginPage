@@ -1,5 +1,53 @@
+@font-face {
+  font-family: "shabnam-bold";
+  src: url("./Assets/Fonts/Shabnam-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "shabnam";
+  src: url("./Assets/Fonts/Shabnam.ttf") format("truetype");
+}
+@font-face {
+  font-family: "shabnam-light";
+  src: url("./Assets/Fonts/Shabnam-Light.ttf") format("truetype");
+}
 body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+.boxLeft {
+  background: rgb(15, 176, 233);
+  background: linear-gradient(
+    45deg,
+    rgba(15, 176, 233, 1) 0%,
+    rgba(130, 233, 218, 1) 100%
+  );
+}
+.boxRight{
+    background: white;
+}
+.RightBoxTop{
+    background: white;
+    height: 15%;
+    font-family: "shabnam-bold";
+    font-size: 16px;
+    color:#0093f0;
+}
+.RightBoxCenter{
+    height: 85%;
+}
+#textLogin{
+    font-size: 20px;
+    font-family: "shabnam";
+}
+#textWriteUser{
+    font-size: 16px;
+    font-family: "shabnam";
+    color: #9e9e9e;
+    margin-top: 2vh;
+}
+#iconUserName{
+    top: 0;
+    left: 0;
+    position: absolute;
 }
