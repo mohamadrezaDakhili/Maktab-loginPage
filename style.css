@@ -15,6 +15,9 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+input:focus {
+  outline-width: 0;
+}
 .boxLeft {
   background: rgb(15, 176, 233);
   background: linear-gradient(
@@ -23,31 +26,83 @@ body {
     rgba(130, 233, 218, 1) 100%
   );
 }
-.boxRight{
-    background: white;
+.RightBoxTop {
+  background: white;
+  height: 15%;
+  font-family: "shabnam-bold";
+  font-size: 16px;
+  color: #0093f0;
 }
-.RightBoxTop{
-    background: white;
-    height: 15%;
-    font-family: "shabnam-bold";
-    font-size: 16px;
-    color:#0093f0;
+#textLogin {
+  font-size: 20px;
+  font-family: "shabnam";
 }
-.RightBoxCenter{
-    height: 85%;
+#textWriteUser {
+  font-size: 16px;
+  font-family: "shabnam";
+  color: #9e9e9e;
+  margin-top: 2vh;
 }
-#textLogin{
-    font-size: 20px;
+.iconInput {
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: #bdbdbd;
+}
+.inputUser {
+  text-align: right;
+  font-family: "shabnam";
+  font-size: 16px;
+  border-color: transparent;
+  border-bottom: 2px solid #e0e0e0;
+  color: #0093ed;
+}
+.inputUser::placeholder {
+  font-family: "shabnam";
+  font-size: 16px;
+  color: #bdbdbd;
+}
+.inputUser:hover {
+  border-bottom: 2px solid #0093ed;
+}
+.button {
+  height: 60px;
+  border: 0em;
+  border-radius: 5px;
+  background-color: #0093ed;
+  color: white;
+  font-family: "shabnam";
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+   box-shadow: 1px 5px 20px #b3b3b3;
+}
+.button:after {
+  content: "";
+  background: #4ab6f8;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+#rememberMe{
     font-family: "shabnam";
-}
-#textWriteUser{
-    font-size: 16px;
-    font-family: "shabnam";
+    font-size: 14px;
     color: #9e9e9e;
-    margin-top: 2vh;
-}
-#iconUserName{
-    top: 0;
-    left: 0;
-    position: absolute;
 }
