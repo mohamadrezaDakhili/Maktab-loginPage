@@ -21,15 +21,32 @@
     <!-- layout -->
     <div class="row m-0 h-100">
         <!-- box left -->
-        <div class="boxLeft col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
+        <div
+            class="boxLeft col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+            <div class="h-100 col-12 bg-primary d-flex justify-content-center align-items-center">
+                <img class="image" height="50%" src="Assets/PNG/radar-angle.png" alt="radar">
+            </div>
+
+            <!-- <div class="h-100 col-12 d-flex justify-content-center align-items-center position-absolute">
+            <img src="Assets/PNG/Logo.png" alt="logo">
+            </div> -->
+
+
+
+
+
+
+
+
         </div>
         <!-- box right -->
         <div class="bg-white col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 row m-0 justify-content-center">
-            <div class="col-xl-8 col-lg-10 col-md-11 col-sm-10 col-12 row m-0 p-0">
+            <div class="col-xl-8 col-lg-10 col-md-11 col-sm-10 col-11 row m-0 p-0">
                 <div class=" RightBoxTop col-12 row p-0 m-0 justify-content-end align-items-end">ورود</div>
                 <div style="height: 85%;" class="col-12 row m-0 p-0 flex-column justify-content-center align-items-end">
                     <span id="textLogin">ورود به حساب کاربری</span>
-                    <span class="mb-3" id="textWriteUser">جهت ورود به برنامه،نام کاربری و رمز عبور خود را وارد نمایید</span>
+                    <span class="mb-3" id="textWriteUser">جهت ورود به برنامه،نام کاربری و رمز عبور خود را وارد
+                        نمایید</span>
                     <div class="position-relative w-100 mt-5">
                         <input class="inputUser w-100" type="text" name="username" id="inputUserName"
                             placeholder="نام کاربری">
@@ -41,11 +58,12 @@
                         <span class="iconInput"><i class="fas fa-lock"></i></span>
                     </div>
                     <div class="w-100 mt-5 d-flex align-items-center">
-                        <div class="w-25">
-                            <img src="./Assets/PNG/captcha.png" alt="captcha">
-                        </div>
+
+                        <img class="w-25" src="./Assets/PNG/captcha.png" alt="captcha">
+
                         <div class="w-75 position-relative m-0 p-0 d-flex justify-content-end">
-                            <input class="inputUser w-100 ml-5" type="password" name="username" id="inputUserName" placeholder="کد امنیتی">
+                            <input class="inputUser w-100 ml-5" type="text" name="username" id="inputUserName"
+                                placeholder="کد امنیتی">
                             <span class="iconInput ml-5"><i class="fas fa-keyboard"></i></span>
                         </div>
                     </div>
