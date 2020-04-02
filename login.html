@@ -19,10 +19,10 @@
 
 <body>
     <!-- layout -->
-    <div class="row m-0 h-100">
+    <div class="row h-100 m-0 p-0">
         <!-- box left -->
         <div
-            class="boxLeft col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+            class="boxLeft col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 d-flex p-0 m-0 justify-content-center align-items-center">
             <!-- circle and radar animation -->
             <div class="h-100 col-12 d-flex justify-content-center align-items-center">
                 <img class="image" width="20%" height="100%" src="Assets/PNG/radar-angle.png" alt="radar">
@@ -33,57 +33,59 @@
                 <div class="element circleFive"></div>
                 <div class="element circleSix"></div>
                 <div class="element circleSeven"></div>
-                <div class="test col-12">Muiti Anti-Virus & Cybersecurity</div>
+                <div class="textAntivirus col-12">Muiti Anti-Virus & Cybersecurity</div>
             </div>
             <!-- logo image -->
-            <div class="h-100 col-12 d-flex justify-content-center align-items-center position-absolute">
+            <div class="h-100 col-12 d-flex p-0 m-0 justify-content-center align-items-center position-absolute">
                 <img src="Assets/PNG/Logo.png" alt="logo">
             </div>
         </div>
-        
+
         <!-- box right -->
-        <div class="bg-white col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 row m-0 justify-content-center">
-            <div class="col-xl-8 col-lg-10 col-md-11 col-sm-10 col-11 row m-0 p-0">
-                <div class=" RightBoxTop col-12 row p-0 m-0 justify-content-end align-items-end">ورود</div>
-                <div style="height: 85%;" class="col-12 row m-0 p-0 flex-column justify-content-center align-items-end">
+        <div class="h-100 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 d-flex justify-content-center ">
+            <div class="d-flex col-xl-9 col-lg-10 col-md-11 col-sm-11 col-11 p-0 m-0 flex-wrap">
+                <div class="col-12 RightBoxTop d-flex p-0 m-0 justify-content-end align-items-end">
+                    ورود
+                </div>
+                <div style="height: 85%;"
+                    class="col-12 row justify-content-center flex-column align-items-end p-0 m-0">
                     <span id="textLogin">ورود به حساب کاربری</span>
                     <span class="mb-3" id="textWriteUser">جهت ورود به برنامه،نام کاربری و رمز عبور خود را وارد
                         نمایید</span>
-                    <div class="position-relative w-100 mt-5">
+                    <!-- inputs -->
+                    <div class="boxHover">
                         <input class="inputUser w-100" type="text" name="username" id="inputUserName"
                             placeholder="نام کاربری">
                         <span class="iconInput"><i class="fas fa-user"></i></span>
                     </div>
-                    <div class="position-relative w-100 mt-5">
+                    <div class="boxHover">
                         <input class="inputUser w-100" type="password" name="username" id="inputUserName"
                             placeholder="رمز عبور">
                         <span class="iconInput"><i class="fas fa-lock"></i></span>
                     </div>
-                    <div class="w-100 mt-5 d-flex align-items-center">
-
+                    <div class="boxHover d-flex align-items-center">
                         <img class="w-25" src="./Assets/PNG/captcha.png" alt="captcha">
-
                         <div class="w-75 position-relative m-0 p-0 d-flex justify-content-end">
                             <input class="inputUser w-100 ml-5" type="text" name="username" id="inputUserName"
                                 placeholder="کد امنیتی">
                             <span class="iconInput ml-5"><i class="fas fa-keyboard"></i></span>
                         </div>
                     </div>
+                    <!-- button -->
                     <button class="button w-100 mt-5">ورود</button>
                     <div class="mt-3 d-flex justify-content-end align-items-center">
+                        <!-- text remember me -->
                         <span class="mr-2" id="rememberMe">مرا به خاطر بسپار</span>
                         <input type="checkbox" name="check">
-
                     </div>
 
 
 
 
                 </div>
+
             </div>
-
         </div>
-
     </div>
 </body>
 
